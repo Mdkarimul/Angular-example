@@ -1,0 +1,25 @@
+.main{
+  padding: 0px 6%;
+  width:100%;
+  height:auto;
+  background:inherit;
+  background-color:white; 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.main img{
+  margin: 14px;
+  width:80px;
+  height: auto;
+  opacity:0.5;
+  transition: all 0.4s;
+}
+.main img:hover{
+  opacity:1;
+}
+
+
+

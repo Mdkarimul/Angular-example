@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+.main{
+    padding: 30px 10px;
+    background-color: #000;
+}
+
+.title{
+    text-align: center;
+    color:white;
+}
+
+.box{
+    display: flex;
+     margin:20px 30px;
+      align-items:center;
+      justify-content: center;
+      flex-direction: column;
+       width:300px;
+       height:330px;
+       padding:0px 10px;
+       position: relative;   
+       background-color: white; 
+}
+.hover_box{
+ position: absolute;
+ top: 0px;
+ left:0px;
+ width:0px;
+ height:100%;
+ background:rgba(209, 207, 204, 0.445);
+ transition: 1s;
+}
+.hover_btn_group
+{
+    position: absolute;
+    bottom:20px;
+    left:0px;
+    display: flex;
+    justify-content: space-around;
+    width:300px;
+    height: auto;
+    padding: 15px;
+}
+
+.contact_btn,.details{
+   border:1px solid blue;
+   color:black;
+   padding:6px 16px;
+   border-radius:25px;
+   display: none;
+}
+.contact_btn:hover
+{
+    background-color: black;
+    transition:1s;
+    color:white;  
+}
+
+.details:hover
+{
+    background-color: black;
+    transition:1s;
+    color:white;  
+}
+
+
+.details{
+    display: none;
+}
+
+
+.box:hover .hover_box
+{
+    width:300px;
+}
+.box:hover .contact_btn
+{
+    display: block;
+   
+}
+
+.box:hover .details
+{
+    display: block;
+  
+}
+
+
+
+
+
+
+.box i{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background-color: blue;
+    padding:12px;
+    font-size:30px;
+    color: white;
+}
+
+.box h3{
+    font-family: 'Montserrat', sans-serif!important;
+    font-size:20px;
+}
+
+.box p{
+text-align: justify;
+font-family: 'Roboto', sans-serif;
+color:rgb(97, 93, 93);
+}
+
+.load-more{
+    border:none;
+    padding:8px 14px;
+    margin: 0px auto;
+    background-color:inherit;
+    border:1px groove #dd0;
+    color:white;
+    border-radius:25px;
+
+}
+
+.load-more:hover{
+    background-color:white;
+    color:black;
+    border:1px solid white;
+    transition: 1s;
+    
+}
+
+.btn_cont{
+   width:100%;
+   height: auto;
+   text-align: center;
+   
+}

@@ -1,0 +1,132 @@
+<div class="demo" [@slide]="control_slider">
+                    
+    <ng-template [ngIf]="show_hide_review">
+      <div class="btn-group next-group">
+          <button class="btn ntn-primary"><i class="fa fa-angle-left text-light"></i></button>
+          <button class="btn"><i class="fa fa-angle-right text-light angle-right" (click)="next_review()"></i></button>
+          </div>
+      </ng-template>
+      
+  
+  
+ 
+  <ng-template [ngIf]="show_hide_review">
+      <!-- <div class="view-cont" *ngFor="let item of data; let i=index;">
+          <div class="people_view">
+              <div class="img_cont">
+                  <img src="../../assets/ceo.jpg" alt="review_image" width="140" height="140" style="border-radius: 50%;">
+                <h5 class="my-2">{{item.full_name}}{{i}}</h5>
+                <p>From {{item.country}} {{item.city}}</p>
+              </div>
+              <div class="text_cont">
+                  <h3 class="title_two">What Elon says </h3>
+                  <br>
+                  <p class="design-content"><span>&#10077;</span>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                      It has roots in a piece of classical Latin literature from 45 BC,
+                       making it over 2000 years old. Richard McClintock, a Latin professor
+                        at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+                        Latin words, consectetur, from a Lorem Ipsum passage, and 
+                     going through the cites of the word in classical<span>&#10078;</span></p>
+                     <br>
+                     <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>
+              </div>
+          </div>
+      </div> -->
+      
+ 
+
+
+      <div class="view-cont">
+          <div class="people_view">
+              <div class="img_cont">
+                  <img src="../../assets/ceo.jpg" alt="review_image" width="140" height="140" style="border-radius: 50%;">
+                <h5>Elon Mask</h5>
+                <p>From India Kolkata</p>
+              </div>
+              <div class="text_cont">
+                  <h3 class="title_two">What Elon says </h3>
+                  <br>
+                  <p class="design-content"><span>&#10077;</span>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                      It has roots in a piece of classical Latin literature from 45 BC,
+                       making it over 2000 years old. Richard McClintock, a Latin professor
+                        at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+                        Latin words, consectetur, from a Lorem Ipsum passage, and 
+                     going through the cites of the word in classical<span>&#10078;</span></p>
+                     <br>
+                     <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      <!-- <div class="view-cont">
+          <div class="people_view">
+              <div class="img_cont">
+                  <img src="../../assets/ceo.jpg" alt="review_image" width="140" height="140" style="border-radius: 50%;">
+                <h5>Elon Mask</h5>
+                <p>From India Kolkata</p>
+              </div>
+              <div class="text_cont">
+                  <h3 class="title_two">What Elon says </h3>
+                  <br>
+                  <p class="design-content"><span>&#10077;</span>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                      It has roots in a piece of classical Latin literature from 45 BC,
+                       making it over 2000 years old. Richard McClintock, a Latin professor
+                        at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+                        Latin words, consectetur, from a Lorem Ipsum passage, and 
+                     going through the cites of the word in classical<span>&#10078;</span></p>
+                     <br>
+                     <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>
+              </div>
+          </div>
+      </div> -->
+  
+
+
+  </ng-template>
+
+
+
+
+
+  <ng-template [ngIf]="!show_hide_review">
+      <div class="post-cont">
+          <div class="cont-form">
+              <h1 class="form-title">What are you thinking about the company</h1>
+              
+              <form [formGroup]="get_review" (submit)="pin()">
+                  <div class="form-group mb-4">
+                      <input type="text" placeholder="Your Name" class="form-input" formControlName="name">
+                  </div>
+  
+                 
+  
+                  <div class="form-group mb-4">
+                      <input type="text" placeholder="Email" class="form-input" formControlName="email">
+                  </div>
+  
+                 
+  
+                  <div class="form-group mb-4">
+                      <input type="text" placeholder="Your Ideas" class="form-input" formControlName="message">
+                  </div>
+
+                  <div class="form-group mb-4">
+                      <input type="text" placeholder="City" class="form-input" formControlName="city">
+                  </div>
+
+                  <div class="form-group mb-4">
+                      <input type="text" placeholder="Country" class="form-input" formControlName="country">
+                  </div>
+  
+                  <button type="submit" class="contact">POST NOW </button>
+              </form>
+             
+
+          </div>
+      </div>
+  </ng-template>
+  
+</div>

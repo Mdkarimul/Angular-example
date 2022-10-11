@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+/* h1{
+    font-family: sans-serif;
+    padding:24px 0px;
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
